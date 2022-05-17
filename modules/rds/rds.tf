@@ -14,6 +14,7 @@ resource "aws_db_instance" "db-master" {
     port                    = var.db_port
 
     vpc_security_group_ids  = [aws_security_group.sg-db.id]
+    db_subnet_group_name    = aws_db_subnet_group.db_subnet_group.name
 
     publicly_accessible     = var.publicly_accessible
 

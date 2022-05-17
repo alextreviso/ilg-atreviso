@@ -13,3 +13,4 @@ variable "db_port" {}
 variable "publicly_accessible" {}
 variable "deletion_protection" {}
 variable "allocated_storage" {}
+variable "private_subnets_ids" {}
