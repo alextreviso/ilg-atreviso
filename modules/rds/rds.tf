@@ -7,6 +7,7 @@ resource "aws_db_instance" "db-master" {
     instance_class          = var.instance_class
     
     storage_type            = var.storage_type
+    allocated_storage       = var.allocated_storage 
 
     username                = var.db_username
     password                = var.db_password
