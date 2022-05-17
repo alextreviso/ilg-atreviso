@@ -1,4 +1,4 @@
-resource "aws_db_instance" "db-master-${application_name}" {
+resource "aws_db_instance" "db-master" {
     name                    = "${var.database_name}"
     identifier              = "db-${var.database_name}"
     
