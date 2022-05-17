@@ -9,3 +9,7 @@ output "public_subnets" {
 output "internet_gateway" {
   value = aws_internet_gateway.internet_gateway.*.id
 }
+
+output "vpc_id" {
+  value = aws_vpc.vpc.id
+}
