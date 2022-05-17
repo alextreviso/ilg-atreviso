@@ -18,7 +18,9 @@ resource "aws_db_instance" "db-master" {
 
     publicly_accessible     = var.publicly_accessible
 
-    deletion_protection = var.deletion_protection
+    deletion_protection = false
+
+    skip_final_snapshot  = true
 
     tags = {
         Name = "db-${var.database_name}"
